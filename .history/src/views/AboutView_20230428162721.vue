@@ -6,8 +6,12 @@
 
 <script lang="ts" setup>
 import '../test'
-
-console.mylog(998)
+Object.defineProperty(console, 'mylog', {
+  value: function (data: any) {
+    console.log('s')
+  }
+})
+console.log('%c我在这呢：')
 </script>
 
 <style>

@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import '../test'
-
-console.mylog(998)
-</script>
-
 <style>
 @media (min-width: 1024px) {
   .about {
